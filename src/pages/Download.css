@@ -1,0 +1,17 @@
+.build {
+    text-align: right;
+    padding-bottom: 1rem;
+}
+
+.build .build-name {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.build .build-release {
+    padding-bottom: 0.75rem;
+}
+
+.recommended-download h3 {
+    margin: 0;
+}

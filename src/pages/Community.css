@@ -1,0 +1,17 @@
+#community-discord-blurb {
+    background: #2C2F33 url('../assets/images/discord-background.svg');
+    background-size: 120px;
+}
+
+#community-forums-blurb {
+    background: #f9a825 url('../assets/images/forum-background.svg');
+    background-size: 120px;
+}
+
+.community-platform {
+    padding: 2rem 0;
+}
+
+.community-platform h4 {
+    font-weight: 700;
+}

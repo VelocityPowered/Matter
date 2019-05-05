@@ -1,0 +1,73 @@
+/* Jumbotron */
+.jumbotron {
+    padding: 4rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.jumbotron h1 {
+    margin: 0;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+}
+
+.jumbotron .jumbotron-btns {
+    padding-top: 1rem;
+}
+
+/* General main sections */
+.front-section {
+    text-align: center;
+    margin: auto;
+}
+
+.front-section .intro {
+    font-size: 1.2rem;
+}
+
+/* Special stuff for the actual benefits */
+.benefit {
+    max-width: 1200px;
+    margin: auto auto 1rem;
+}
+
+.benefit-icon {
+    font-size: 7.5rem;
+}
+
+.benefit h4 {
+    margin-top: 0.2em;
+}
+
+/* Blurbs from our users */
+.user-blurb {
+    font-size: 1.5rem;
+    text-align: left;
+    font-style: italic;
+}
+
+/* Sponsors */
+#sponsors-section {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#sponsors-row {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#sponsors-row li {
+    list-style-type: none;
+}
+
+#sponsors-header {
+    font-weight: 700;
+}

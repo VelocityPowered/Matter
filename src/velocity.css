@@ -1,0 +1,22 @@
+.brand-logo img {
+    height: 36px;
+    vertical-align: middle;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.intro h1 {
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.page-footer .row {
+    margin-bottom: 0;
+}

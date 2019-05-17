@@ -1,0 +1,32 @@
+@import '~materialize-css/sass/components/color-variables';
+@import '~materialize-css/sass/components/color-classes';
+
+// redefine some variables
+$primary-color: color('grey', 'darken-4');
+$secondary-color: color('light-blue', 'darken-2');
+
+@import '~materialize-css/sass/components/variables';
+@import '~materialize-css/sass/materialize';
+
+.brand-logo img {
+    height: 36px;
+    vertical-align: middle;
+    margin-top: -8px;
+    margin-left: 10px;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.intro h1 {
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.page-footer .row {
+    margin-bottom: 0;
+}

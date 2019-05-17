@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Index.css';
-import {ButtonLink, LargeButtonLink} from "../components/Button";
+import {ButtonLink, JumbotronButtonLink} from "../components/Button";
 
 const Sponsor = ({ name, icon, url }) => (
     <div className="Sponsor">
@@ -18,11 +18,11 @@ const Jumbotron = () => (
                     <h1>Dare to move fast.</h1>
                     <p>Unleash the full power of your Minecraft server with Velocity, the server proxy with unparalleled server support, scalability, and flexibility.</p>
                     <div className="jumbotron-btns">
-                        <LargeButtonLink href="/community"><i className="material-icons left">chat</i>Community</LargeButtonLink>
+                        <JumbotronButtonLink href="/community"><i className="material-icons left">chat</i>Community</JumbotronButtonLink>
                         &nbsp;
-                        <LargeButtonLink href="/downloads"><i className="material-icons left">archive</i>Download</LargeButtonLink>
+                        <JumbotronButtonLink href="/downloads"><i className="material-icons left">archive</i>Download</JumbotronButtonLink>
                         &nbsp;
-                        <LargeButtonLink href="https://github.com/VelocityPowered"><i className="material-icons left">code</i>GitHub</LargeButtonLink>
+                        <JumbotronButtonLink href="https://github.com/VelocityPowered"><i className="material-icons left">code</i>GitHub</JumbotronButtonLink>
                     </div>
                 </div>
             </div>

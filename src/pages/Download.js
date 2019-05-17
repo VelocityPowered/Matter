@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonLink, LargeButtonLink} from "../components/Button";
+import {ButtonLink} from "../components/Button";
 import {ProgressBar, Select} from 'react-materialize';
 import "./Download.css";
 

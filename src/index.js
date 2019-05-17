@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import Routes from './routes';
 
-import '../node_modules/materialize-css/dist/css/materialize.css';
+import './velocity.scss';
 import M from '../node_modules/materialize-css/dist/js/materialize.js';
-import './velocity.css';
 
 ReactDOM.render(<Routes />, document.getElementById('root'));
 registerServiceWorker();

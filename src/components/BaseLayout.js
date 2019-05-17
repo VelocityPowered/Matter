@@ -10,7 +10,7 @@ const Wordmark = () => (
 );
 
 const FooterWordmark = () => (
-    <div className="">
+    <div>
         <Link to="/"><img src={wordmark} alt="Velocity" height="48px" /></Link>
     </div>
 );

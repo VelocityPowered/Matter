@@ -11,7 +11,7 @@ const Build = ({ name, version, buildNumber, date, download }) => (
             <i className="material-icons left">archive</i> Download
         </ButtonLink>
     </div>
-)
+);
 
 export default class Download extends React.Component {
     constructor() {
@@ -20,6 +20,20 @@ export default class Download extends React.Component {
     }
 
     async componentDidMount() {
+        const allProjectsResponse = await window.fetch('http://localhost:8000/v1/releases/');
+        if (!allProjectsResponse.ok) {
+            this.setState({error: true});
+            return;
+        }
+
+        const allProjects = await allProjectsResponse.json();
+        if (!allProjects.ok) {
+            this.setState({error: true});
+            return;
+        }
+
+        // we have the projects from the API
+
         setTimeout(() => this.setState({done: true}), 3000);
     }
 
@@ -55,7 +69,7 @@ export default class Download extends React.Component {
         return (
             <div>
                 <div className="row">
-                    <Select label="Minecraft version" value="1.14" onChange={() => {}}>
+                    <Select label="Version" value="1.14" onChange={() => {}}>
                         {avail.map((v) => <option value={v}>{v}</option>)}
                     </Select>
                 </div>

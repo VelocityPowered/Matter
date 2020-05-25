@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Index.css';
-import {ButtonLink, JumbotronButtonLink} from "../components/Button";
+import { ButtonLink, JumbotronButtonLink } from "../components/Button";
 
 const Sponsor = ({ name, icon, url }) => (
     <div className="Sponsor">
@@ -15,15 +15,8 @@ const Jumbotron = () => (
         <div className="container">
             <div className="row">
                 <div className="col l12">
-                    <h1>Dare to move fast.</h1>
-                    <p>Unleash the full power of your Minecraft server with Velocity, the server proxy with unparalleled server support, scalability, and flexibility.</p>
-                    <div className="jumbotron-btns">
-                        <JumbotronButtonLink href="/community"><i className="material-icons left">chat</i>Community</JumbotronButtonLink>
-                        &nbsp;
-                        <JumbotronButtonLink href="/downloads"><i className="material-icons left">archive</i>Download</JumbotronButtonLink>
-                        &nbsp;
-                        <JumbotronButtonLink href="https://github.com/VelocityPowered"><i className="material-icons left">code</i>GitHub</JumbotronButtonLink>
-                    </div>
+                    <h1>Don't stop now.</h1>
+                    <p>Unleash the full power of your Minecraft server with Velocity, the next-generation high-performance Minecraft server proxy.</p>
                 </div>
             </div>
         </div>
@@ -56,121 +49,93 @@ const Benefit = ({ iconName, title, children }) => (
     </div>
 );
 
-class Index extends Component {
-    render() {
-        return (
-            <div id="Index">
-                <Jumbotron />
+const Index = () => (
+    <div id="Index">
+        <Jumbotron />
 
-                <div className="section front-section" id="benefits">
-                    <div className="container">
-                        <div className="row intro">
-                            <div className="col m12">
-                                <h3>You'll love Velocity.</h3>
-                                <p>
-                                    We could ask you to try it out for yourself and see what the hype is all about. But
-                                    if you're not convinced, here's some of the most important features for everyone
-                                    from small-time server owners to administrators of a sprawling network.
-                                </p>
-                            </div>
-                        </div>
+        <div className="section front-section" id="benefits">
+            <div className="container">
+                <div className="row intro">
+                    <div className="col m12">
+                        <h3>You'll love Velocity.</h3>
+                        <p>
+                            Velocity is feature-packed - there's something for everyone. Whether you
+                            run a small network for modded Minecraft or a large network, you can trust
+                            Velocity to power your network.
+                        </p>
+                    </div>
+                </div>
 
-                        <div className="row">
-                            <Benefit iconName="check_circle" title="It's simple to set up.">
-                                <p>
-                                    You can set up Velocity in just a few minutes. No need to muck around with a bunch of different configuration
-                                    files or install dubious plugins on your server.
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Install Velocity
-                                </ButtonLink>
-                            </Benefit>
+                <div className="row">
+                    <Benefit iconName="check_circle" title="It's simple to set up.">
+                        <p>
+                            You can set up Velocity in just a few minutes. No need to muck around with a bunch of different configuration
+                            files or install dubious plugins on your server.
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Install Velocity
+                        </ButtonLink>
+                    </Benefit>
 
-                            <Benefit iconName="build" title="Your server, your way.">
-                                <p>
-                                    Velocity comes with excellent support for <a href="https://papermc.io">Paper</a>, <a href="https://www.spongepowered.org">Sponge</a>, and&nbsp;
+                    <Benefit iconName="build" title="Your server, your way.">
+                        <p>
+                            Velocity comes with excellent support for <a href="https://papermc.io">Paper</a>, <a href="https://www.spongepowered.org">Sponge</a>, and&nbsp;
                                     <a href="http://www.minecraftforge.net">Minecraft Forge</a>. We can respond to Minecraft updates quickly, so you'll never have an
                                     excuse to not update.
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Server support
-                                </ButtonLink>
-                            </Benefit>
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Server support
+                        </ButtonLink>
+                    </Benefit>
 
-                            <Benefit iconName="lock" title="Secure by default.">
-                                <p>
-                                    Velocity comes with IP forwarding that is secure by default. Simply choose a secure password and put it
-                                    in your server configurations. Ward off griefers with hacked clients!
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Learn more
-                                </ButtonLink>
-                            </Benefit>
-                        </div>
-
-                        <div className="row">
-                            <Benefit iconName="show_chart" title="It's crazy efficient.">
-                                <p>
-                                    Velocity includes multiple optimizations that aren't included in other proxies, has
-                                    lower CPU and memory usage, and still supports the plugins you want.
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Learn more
-                                </ButtonLink>
-                            </Benefit>
-
-                            <Benefit iconName="thumb_up" title="A pleasure to work with.">
-                                <p>
-                                    Velocity features a user-friendly configuration file written in TOML, and provides
-                                    plugin developers with a flexible plugin API.
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Learn more
-                                </ButtonLink>
-                            </Benefit>
-
-                            <Benefit iconName="favorite" title="Used by the very best.">
-                                <p>
-                                    Velocity includes multiple optimizations that aren't included in other proxies, has
-                                    lower CPU and memory usage, and still supports the plugins you want.
-                                </p>
-                                <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                                    <i className="material-icons left">archive</i>Learn more
-                                </ButtonLink>
-                            </Benefit>
-                        </div>
-                    </div>
+                    <Benefit iconName="lock" title="Secure by default.">
+                        <p>
+                            Velocity comes with IP forwarding that is secure by default. Simply choose a secure password and put it
+                            in your server configurations. Ward off griefers with hacked clients!
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Learn more
+                        </ButtonLink>
+                    </Benefit>
                 </div>
 
-                <div className="section front-section">
-                    <div className="container">
-                        <div className="row intro">
-                            <div className="col m12">
-                                <h3>You don't have to take it from us.</h3>
-                                <p>
-                                    Take it from server owners and developers just like you.
-                                </p>
-                            </div>
-                        </div>
+                <div className="row">
+                    <Benefit iconName="show_chart" title="It's crazy efficient.">
+                        <p>
+                            Velocity includes multiple optimizations that aren't included in other proxies, has
+                            lower CPU and memory usage, and still supports the plugins you want.
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Learn more
+                        </ButtonLink>
+                    </Benefit>
 
-                        <div className="row">
-                            <div className="col m12">
-                                <blockquote className="user-blurb">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae fringilla
-                                    arcu. Praesent rutrum tempus dui a posuere. Cras molestie.
+                    <Benefit iconName="thumb_up" title="A pleasure to work with.">
+                        <p>
+                            Velocity features a user-friendly configuration file written in TOML, and provides
+                            plugin developers with a flexible plugin API.
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Learn more
+                        </ButtonLink>
+                    </Benefit>
 
-                                    - TBD
-                                </blockquote>
-                            </div>
-                        </div>
-                    </div>
+                    <Benefit iconName="favorite" title="Used by the very best.">
+                        <p>
+                            Velocity includes multiple optimizations that aren't included in other proxies, has
+                            lower CPU and memory usage, and still supports the plugins you want.
+                        </p>
+                        <ButtonLink href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                            <i className="material-icons left">archive</i>Learn more
+                        </ButtonLink>
+                    </Benefit>
                 </div>
-
-                <div className="divider" />
-                <Sponsors />
             </div>
-        )
-    }
-}
+        </div>
+
+        <div className="divider" />
+        <Sponsors />
+    </div>
+)
 
 export default Index

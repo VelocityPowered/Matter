@@ -5,16 +5,16 @@
     width: 100%;
 }
 
+.jumbotron .row {
+    margin: 0;
+}
+
 .jumbotron h1 {
     margin: 0;
 }
 
 .jumbotron p {
     font-size: 1.2rem;
-}
-
-.jumbotron .jumbotron-btns {
-    padding-top: 1rem;
 }
 
 /* General main sections */

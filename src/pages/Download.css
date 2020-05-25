@@ -3,6 +3,10 @@
     padding-bottom: 1rem;
 }
 
+.build.side-by-side {
+    text-align: center;
+}
+
 .build .build-name {
     font-size: 2rem;
     font-weight: 700;

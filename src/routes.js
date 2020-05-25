@@ -5,6 +5,7 @@ import { createBrowserHistory } from "history";
 import Index from './pages/Index';
 import BaseLayout from './components/BaseLayout';
 import Download from "./pages/Download";
+import Users from "./pages/Users";
 import {Community} from "./pages/Community";
 
 const history = createBrowserHistory();
@@ -17,6 +18,7 @@ const Routes = () => (
                 <Route path="/" exact component={Index}/>
                 <Route path="/downloads" exact component={Download}/>
                 <Route path="/community" exact component={Community}/>
+                <Route path="/users" exact component={Users}/>
             </div>
         </BaseLayout>
     </Router>

@@ -7,7 +7,7 @@ export const Community = () => (
         <div className="container">
             <div className="row intro">
                 <div className="col s12">
-                    <h1>Join the Velocity Community</h1>
+                    <h1>Join Our Community</h1>
                     <p>
                         The Velocity community welcomes all with open arms. Whether you like to play with the internals
                         of the Minecraft server, run a server, or write plugins, we've got a place for you in our community.

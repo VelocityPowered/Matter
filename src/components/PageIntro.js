@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-class Jumbotron extends Component {
+class PageIntro extends Component {
     render() {
-        return <div className={"grey " + this.props.darken + " jumbotron white-text"}>
+        return <div className="center">
             <div className="container">
                 <h1>{this.props.title}</h1>
                 <p>{this.props.subtitle}</p>
@@ -12,4 +12,4 @@ class Jumbotron extends Component {
     }
 }
 
-export default Jumbotron;
+export default PageIntro;

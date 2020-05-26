@@ -6,7 +6,7 @@ import Jumbotron from "../components/Jumbotron";
 export const Community = () => (
     <div>
 
-        <Jumbotron title="Join Our Community"
+        <Jumbotron darken="darken-4" title="Join Our Community"
                    subtitle=" The Velocity community welcomes all with open arms. Whether you like to play with the internals
                 of the Minecraft server, run a server, or write plugins, we've got a place for you in our community." />
 

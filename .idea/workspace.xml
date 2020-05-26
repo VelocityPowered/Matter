@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c63c7774-018d-4fe3-a5ce-5d88da211959" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Jumbotron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PageIntro.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BaseLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BaseLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageIntro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Community.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Community.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Jumbotron.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Jumbotron.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Community.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Community.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Download.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Download.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Download.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Download.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Users.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +48,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../website" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -66,6 +59,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Website Stuff\velocity\Matter\src\components" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
@@ -114,18 +112,34 @@
       <workItem from="1548654899690" duration="33000" />
       <workItem from="1556939033613" duration="13801000" />
       <workItem from="1557001061367" duration="13769000" />
-      <workItem from="1590504974069" duration="5490000" />
+      <workItem from="1590504974069" duration="7552000" />
     </task>
+    <task id="LOCAL-00001" summary="Made the website more consistent, changed the design on the community page, fixed the pinging issue on the users page">
+      <created>1590511876674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590511876674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made the website more consistent, changed the design on the community page, fixed the pinging issue on the users page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the website more consistent, changed the design on the community page, fixed the pinging issue on the users page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590510602084">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.2560.1080@0.0.1920.1080" timestamp="1590510602084" />
+    <state x="585" y="108" key="CommitChangelistDialog2" timestamp="1590511874663">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="585" y="108" key="CommitChangelistDialog2/0.0.1920.1080/1920.0.2560.1080@0.0.1920.1080" timestamp="1590511874663" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1590507905896">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -146,6 +160,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1899" height="294" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.2560.1080@0.0.1920.1080" timestamp="1590505083522" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1590511879612">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.2560.1080@0.0.1920.1080" timestamp="1590511879612" />
   </component>
   <component name="masterDetails">
     <states>

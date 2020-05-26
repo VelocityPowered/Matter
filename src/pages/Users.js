@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Users.css";
-import Jumbotron from "../components/Jumbotron";
+import PageIntro from "../components/PageIntro";
 
 const users = [
     {
@@ -88,17 +88,17 @@ function partition(arr, by) {
 const Users = () => {
     const usersPartition = partition(users, 4)
     return <>
-            <Jumbotron title="Who's Using Velocity?">
+            <PageIntro title="Who's Using Velocity?">
             <p> These networks are powered by Velocity. Want yours added? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFeOdwtSPZjK3lJVzwEI_hyYMGDxUsCmcQm7IRDTFZTkgSGw/viewform">Let us know!</a></p>
-        </Jumbotron>
-        <div className="container userContainer">
-            {usersPartition.map((users, i) => {
-                return <div className="row" key={i}>
-                    {users.map((user) => <User {...user} key={user.name} />)}
-                </div>
-            })}
-        </div>
-    </>
+            </PageIntro>
+            <div className="container userContainer">
+                {usersPartition.map((users, i) => {
+                    return <div className="row" key={i}>
+                        {users.map((user) => <User {...user} key={user.name} />)}
+                    </div>
+                })}
+            </div>
+        </>
 }
 
 export default Users

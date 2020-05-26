@@ -1,6 +1,6 @@
 import React from 'react';
 import {ButtonLink} from "../components/Button";
-import {Select} from 'react-materialize';
+import PageIntro from "../components/PageIntro";
 import "./Download.css";
 
 const VELOCITY_VERSIONS = {
@@ -70,22 +70,22 @@ const Build = ({ name, version, date, download, sideBySide }) => (
 export default class Download extends React.Component {
     render() {
         return (
-            <div className="container">
-                <div className="row intro">
-                    <div className="col s12">
-                        <h1>Download Velocity</h1>
-                        <p>
-                            Choose a version of Velocity to download below. Once you've got it, <a href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
-                            install and configure Velocity</a>.
-                        </p>
+            <>
+                <PageIntro>
+                    <h1>Download Velocity</h1>
+                    <p>
+                        Choose a version of Velocity to download below. Once you've got it, <a href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
+                        install and configure Velocity</a>.
+                    </p>
+                </PageIntro>
+                <div className="container">
+                    <div className="row">
+                        <div className="col s12">
+                            {this._renderDownloads()}
+                        </div>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col s12">
-                        {this._renderDownloads()}
-                    </div>
-                </div>
-            </div>
+            </>
         )
     }
 

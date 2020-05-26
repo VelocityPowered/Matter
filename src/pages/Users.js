@@ -39,7 +39,7 @@ const UserPlayers = ({ players }) => {
         return <div>Pinging...</div>
     }
 
-    if (players.online) {
+    if (players.status) {
         return <div>{players.players.online} players online</div>
     } else {
         return <div>Offline</div>
@@ -51,10 +51,10 @@ const User = ({ name, url, ip }) => {
     useEffect(() => {
         async function fetchPlayersData() {
             try {
-                const resp = await window.fetch('https://api.mcsrvstat.us/2/' + ip)
+                const resp = await window.fetch('https://mcapi.ca/ping/all/' + ip)
                 setPlayers(await resp.json())
             } catch (e) {
-                setPlayers({ online: false })
+                setPlayers({ status: false })
             }
         }
 
@@ -64,7 +64,7 @@ const User = ({ name, url, ip }) => {
     return (
         <div className="col m3">
             <div className="col favicon-col user">
-                {players && players.icon ? <img src={players.icon} alt={name} width="64" height="64" /> : null}
+                {players && players.favicon ? <img src={players.favicon} alt={name} width="64" height="64" /> : null}
             </div>
             <div className="col user">
                 <a href={url} className="user-title">
@@ -76,19 +76,30 @@ const User = ({ name, url, ip }) => {
     )
 }
 
+function partition(arr, by) {
+    const split = []
+    for (let i = 0; i < arr.length; i += by) {
+        split.push(arr.slice(i, Math.min(arr.length, i + by)))
+    }
+    return split
+}
+
 const Users = () => {
+    const usersPartition = partition(users, 4)
     return <div className="container">
         <div className="row intro">
             <div className="col s12">
                 <h1>Who's Using Velocity?</h1>
                 <p>
-                    These networks are powered by Velocity. Want yours added?
+                    These networks are powered by Velocity. Want yours added? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFeOdwtSPZjK3lJVzwEI_hyYMGDxUsCmcQm7IRDTFZTkgSGw/viewform">Let us know!</a>
                 </p>
             </div>
         </div>
-        <div className="row">
-            {users.map((user) => <User {...user} key={user.name} />)}
-        </div>
+        {usersPartition.map((users, i) => {
+            return <div className="row" key={i}>
+                {users.map((user) => <User {...user} key={user.name} />)}
+            </div>
+        })}
     </div>
 }
 

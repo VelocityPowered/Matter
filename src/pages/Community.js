@@ -1,21 +1,18 @@
 import React from 'react';
 import {LargeButtonLink} from "../components/Button";
+import PageIntro from "../components/PageIntro";
 import './Community.css';
 
 export const Community = () => (
     <div>
-        <div className="container">
-            <div className="row intro">
-                <div className="col s12">
-                    <h1>Join Our Community</h1>
-                    <p>
-                        The Velocity community welcomes all with open arms. Whether you like to play with the internals
-                        of the Minecraft server, run a server, or write plugins, we've got a place for you in our community.
-                    </p>
-                </div>
-            </div>
-        </div>
-
+        <PageIntro>
+            <h1>Join Our Community</h1>
+            <p>
+                The Velocity community welcomes all with open arms. Whether you like to play with the internals
+                of the Minecraft server, run a server, or write plugins, we've got a place for you in our community.
+            </p>
+        </PageIntro>
+        
         <div id="community-forums-blurb" className="community-platform">
             <div className="container white-text">
                 <div className="row">

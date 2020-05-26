@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Users.css";
+import Jumbotron from "../components/Jumbotron";
 
 const users = [
     {
@@ -40,18 +41,18 @@ const UserPlayers = ({ players }) => {
     }
 
     if (players.status) {
-        return <div>{players.players.online} players online</div>
+        return <div>{players.players.now} players online</div>
     } else {
         return <div>Offline</div>
     }
 }
 
 const User = ({ name, url, ip }) => {
-    const [players, setPlayers] = useState(null)
+    const [result, setPlayers] = useState(null)
     useEffect(() => {
         async function fetchPlayersData() {
             try {
-                const resp = await window.fetch('https://mcapi.ca/ping/all/' + ip)
+                const resp = await window.fetch('https://mcapi.us/server/status?ip='+ ip +'&port=25565')
                 setPlayers(await resp.json())
             } catch (e) {
                 setPlayers({ status: false })
@@ -64,13 +65,13 @@ const User = ({ name, url, ip }) => {
     return (
         <div className="col m3">
             <div className="col favicon-col user">
-                {players && players.favicon ? <img src={players.favicon} alt={name} width="64" height="64" /> : null}
+                {result && result.favicon ? <img src={result.favicon} alt={name} width="64" height="64" /> : null}
             </div>
             <div className="col user">
                 <a href={url} className="user-title">
                     {name}
                 </a>
-                <UserPlayers players={players} />
+                <UserPlayers players={result} />
             </div>
         </div>
     )
@@ -86,21 +87,18 @@ function partition(arr, by) {
 
 const Users = () => {
     const usersPartition = partition(users, 4)
-    return <div className="container">
-        <div className="row intro">
-            <div className="col s12">
-                <h1>Who's Using Velocity?</h1>
-                <p>
-                    These networks are powered by Velocity. Want yours added? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFeOdwtSPZjK3lJVzwEI_hyYMGDxUsCmcQm7IRDTFZTkgSGw/viewform">Let us know!</a>
-                </p>
-            </div>
+    return <>
+            <Jumbotron title="Who's Using Velocity?">
+            <p> These networks are powered by Velocity. Want yours added? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFeOdwtSPZjK3lJVzwEI_hyYMGDxUsCmcQm7IRDTFZTkgSGw/viewform">Let us know!</a></p>
+        </Jumbotron>
+        <div className="container userContainer">
+            {usersPartition.map((users, i) => {
+                return <div className="row" key={i}>
+                    {users.map((user) => <User {...user} key={user.name} />)}
+                </div>
+            })}
         </div>
-        {usersPartition.map((users, i) => {
-            return <div className="row" key={i}>
-                {users.map((user) => <User {...user} key={user.name} />)}
-            </div>
-        })}
-    </div>
+    </>
 }
 
 export default Users

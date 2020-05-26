@@ -1,7 +1,7 @@
 import React from 'react';
 import {ButtonLink} from "../components/Button";
-import PageIntro from "../components/PageIntro";
 import "./Download.css";
+import Jumbotron from "../components/Jumbotron";
 
 const VELOCITY_VERSIONS = {
     '1.1.0': {
@@ -71,14 +71,14 @@ export default class Download extends React.Component {
     render() {
         return (
             <>
-                <PageIntro>
-                    <h1>Download Velocity</h1>
+                <Jumbotron title="Download Velocity">
                     <p>
                         Choose a version of Velocity to download below. Once you've got it, <a href="https://docs.velocitypowered.com/en/latest/users/getting-started.html">
                         install and configure Velocity</a>.
                     </p>
-                </PageIntro>
-                <div className="container">
+                </Jumbotron>
+
+                <div className="container downloadContainers">
                     <div className="row">
                         <div className="col s12">
                             {this._renderDownloads()}

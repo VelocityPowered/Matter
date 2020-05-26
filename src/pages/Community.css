@@ -1,11 +1,23 @@
+.page-content {
+    margin-bottom: 0;
+}
+
+.row {
+    margin-bottom: 0 !important;
+}
+
+.row .col {
+    padding: 0 !important;
+}
+
 #community-discord-blurb {
     background: #7289DA url('../assets/images/discord-background.svg');
-    background-size: 120px;
+    height: 600px;
 }
 
 #community-forums-blurb {
     background: #212121 url('../assets/images/forum-background.svg');
-    background-size: 120px;
+    height: 600px;
 }
 
 .community-platform {
@@ -14,4 +26,16 @@
 
 .community-platform h4 {
     font-weight: 700;
+}
+
+@media (max-width: 1375px) {
+    #discord-widget {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    #community-forums-blurb {
+        height: auto;
+    }
 }

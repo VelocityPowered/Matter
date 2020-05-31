@@ -31,6 +31,11 @@ const users = [
         name: 'Quad',
         url: 'https://quad.gg/',
         ip: 'quad.gg'
+    },
+    {
+        name: 'NoDebuff',
+        url: 'http://discord.com/invite/JjCEV8X',
+        ip: 'nodebuff.net'
     }
 ]
 

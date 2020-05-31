@@ -1,25 +1,13 @@
 import React, { Component } from 'react';
 import './Index.css';
 import { ButtonLink, JumbotronButtonLink } from "../components/Button";
+import Jumbotron from "../components/Jumbotron"
 
 const Sponsor = ({ name, icon, url }) => (
     <div className="Sponsor">
         <a href={url}>
             <img src={icon} alt={name} width="300" height="70" />
         </a>
-    </div>
-);
-
-const Jumbotron = () => (
-    <div className="grey darken-3 jumbotron white-text">
-        <div className="container">
-            <div className="row">
-                <div className="col l12">
-                    <h1>Don't stop now.</h1>
-                    <p>Unleash the full power of your Minecraft server with Velocity, the next-generation high-performance Minecraft server proxy.</p>
-                </div>
-            </div>
-        </div>
     </div>
 );
 
@@ -51,7 +39,7 @@ const Benefit = ({ iconName, title, children }) => (
 
 const Index = () => (
     <div id="Index">
-        <Jumbotron />
+        <Jumbotron title="Don't stop now." subtitle="Unleash the full power of your Minecraft server with Velocity, the next-generation high-performance Minecraft server proxy." />
 
         <div className="section front-section" id="benefits">
             <div className="container">

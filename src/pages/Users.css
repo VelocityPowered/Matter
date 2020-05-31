@@ -1,5 +1,9 @@
+.userContainer {
+    margin: 50px auto !important;
+}
+
 .user {
-    padding: 1rem 0 !important;
+    margin: 1.5rem 0 !important;
 }
 
 .favicon-col {

@@ -25,13 +25,15 @@ const FooterLink = ({ href, children }) => {
 export default ({ children }) => (
     <div className="BaseLayout">
         <Navbar fixed brand={<Wordmark />} alignLinks="right" className="grey darken-4">
-            <NavLink to="/downloads">Download</NavLink>
-            <a href="https://docs.velocitypowered.com">Documentation</a>
             <NavLink to="/community">Community</NavLink>
             <a href="https://forums.velocitypowered.com">Forums</a>
+            <a href="https://docs.velocitypowered.com">Documentation</a>
+            <NavLink to="/downloads">Download</NavLink>
         </Navbar>
-    
-        {children}
+
+        <div className="page-content">
+            {children}
+        </div>
 
         <footer className="page-footer grey darken-4 white-text">
             <div className="container">
@@ -44,6 +46,7 @@ export default ({ children }) => (
                             <li>About</li>
                             <li><FooterLink href="https://docs.velocitypowered.com">Documentation</FooterLink></li>
                             <li><FooterLink href="/downloads">Download</FooterLink></li>
+                            <li><FooterLink href="/users">Servers using Velocity</FooterLink></li>
                         </ul>
                     </Col>
                     <Col l={4} s={12}>
